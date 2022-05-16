@@ -1,19 +1,10 @@
-Empty IG
----
-This is an empty IG
-<br> </br>
-###
-### Publication
-This ImplementationGuide is published in the following locations:
+# Learn how to generate bulk FHIR data with FSH
 
-Continuous Build: __http://build.fhir.org/ig/openhie/fhir-ig-empty/branches/main/index.html__  
-Canonical / permanent URL: 
-<br> </br>
+This is a simple repo to show how to template and generate FSH files.
 
-### Issues
-Issues and change requests are managed here:  
+## How to use
 
-Issues:  __https://github.com/openhie/fhir-ig-empty/issues__  
-Kanban board:  __https://github.com/openhie/fhir-ig-empty/projects/1__  
-
----
+* Create a folder at `input/examples-src/output`.
+* Edit, and run the Jupyter Notebook `bulk-process.py`. 
+* The Patient resources are generated from the CSV rows (minus the header) in `input/examples-src/batteries.csv`.
+* The output is in the output folder. After they are generated they can be moved into `input/fsh` or into a subfolder there to be used with `sushi`.
